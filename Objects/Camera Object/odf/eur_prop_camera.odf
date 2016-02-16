@@ -1,0 +1,127 @@
+[GameObjectClass]
+ClassLabel          = "flyer"
+GeometryName            = "editor_eur_camera_object.msh"
+
+[Properties]
+FLYERSECTION            = "BODY"
+
+HUDModel 		= "hud_IFT_shape"
+VehicleType             = "fighter"
+
+MapTexture          = "camera_object"
+HealthTexture           = "HUD_rep_fightertank_icon"
+VehiclePosition         = "common.vehiclepositions.blank"
+MapScale            = 1.5
+
+//PilotType	= self
+
+ForceMode	= 1
+
+GeometryName		= "eur_camera_object"	// invisible camera mesh
+
+PhysicsActive	= 0
+
+MaxHealth           = 999999.0
+AddHealth           = 999999.0
+HideHealthBar		= "1"
+
+HealthType          = "vehicle"
+
+PilotSkillRepairScale = 0.02
+
+TakeoffTime             = 0.01
+TakeoffSpeed            = 10.0
+TakeoffHeight           = 1.6
+
+LandingTime             = 0.01
+LandingSpeed            = 10.0
+LandedHeight            = 0.6
+
+SoldierCollision        = "none"
+TerrainCollision        = "p_cube"
+
+WEAPONSECTION           = 1
+WeaponName          = "eur_prop_camera_weap"
+WeaponAmmo          = 0
+
+AimerNodeName           = "hp_aimer"
+AimerPitchLimits        = "0.0 0.0"
+AimerYawLimits          = "0.0 0.0"
+FireOutsideLimits		= "1"
+
+ExplosionDestruct       = "eur_prop_camera_exp"
+
+//SOUNDS**************************8
+VOUnitType              = 128
+EngineSound             = ""
+TakeoffSound            = ""
+LandSound               = ""
+HurtSound               = ""
+DeathSound              = ""
+VehicleCollisionSound   = ""
+TurnOnSound             = ""
+TurnOffSound            = ""
+TurnOffTime             = ""
+TurningOffSound         = ""
+Music                   = ""
+CISMusic                = ""
+RepMusic                = ""
+MusicSpeed              = "0.0"
+MusicDelay              = "0.0"
+AfterburnerOnSound      = ""
+AfterburnerOffSound     = ""
+AfterburnerSpeed        = ""
+Cockpit1stPersonSound   = ""
+Cockpit3rdPersonSound   = ""
+FoleyFXGroup    = "metal_foley"
+
+
+// ***************************************************************************************
+
+EnergyBar               = 100
+EnergyAutoRestore       = 10
+EnergyBoostDrain        = 20
+EnergyTrickDrainSingleTap = 15
+EnergyTrickDrainDoubleTap = 50
+
+FirstPersonFOV          = "60"
+ThirdPersonFOV          = "60"
+
+CockpitTension          = "0"
+CollisionScale          = 0.0
+CollisionThreshold      = 0.0
+
+PitchRate               = 1.2
+PitchFilter             = 4.0
+PitchFilterDecel        = 4.0
+PitchBuildupMultiplier  = 1.5
+
+TurnRate                = 1.2
+TurnFilter              = 4.0
+TurnFilterDecel         = 4.0
+TurnBuildupMultiplier   = 1.25
+
+BankAngle               = 0.0
+BankFilter              = 0.0
+LevelFilter             = 0.0
+LevelFilterLanding      = 0.0 // LevelFilter for landing
+RollRate                = 0.0
+
+PCPitchRate             = 15.0
+PCSpinRate              = 15.0
+PCTurnRate              = 25.0
+
+EyePointOffset		= "0.0 0.0 0.0"
+TrackCenter			= "0.0 0.0 0.0"
+TrackOffset			= "0.0 0.0 0.0"
+TiltValue			= "0.0"
+
+AimTension              = "0.0" // how much the reticule swims
+MoveTensionX            = "50.0"
+MoveTensionY            = "50.0"
+MoveTensionZ            = "50.0"
+
+Acceleraton             = 0.0
+MinSpeed                = 0.0
+MidSpeed                = 0.0001
+MaxSpeed                = 0.0001
